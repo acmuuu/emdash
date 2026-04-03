@@ -19,11 +19,10 @@
 			"bucket_name": "emdash-media","preview_bucket_name": "emdash-media",
 		},
 	],
-	// D1 session: "auto" needs binding SESSION. Use the KV id from the dashboard / `wrangler kv namespace list` (title "emdash-session").
-	// preview_id is optional: only if you want wrangler dev to use a separate KV; one namespace → omit it.
+	// Binding name must be SESSION (env.SESSION) — "emdash-session" is only the KV title in the dashboard.
 	"kv_namespaces": [
 		{
-			"binding": "emdash-session",
+			"binding": "SESSION",
 			"id": "f048df5882ee4e56ad72c2c20002036c",
 		},
 	],
